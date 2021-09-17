@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <!--My Css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pokemón</title>
+</head>
+<body>
+    <main id="main" class="flex">
+        
+    </main>
+    <template id="template-card">
+        <article class="card">
+            <img src="./images/bg-pattern-card.svg" alt="Imagen Header Card" class="card-header">
+            <div class="card-body">
+                <img id="image" class="card-body-img" src="" alt="Imagen Pokemon">
+                <h1 id="body-title" class="card-body-title"></h1>
+                <p id="type" class="card-body-text"></p>
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-text">
+                    <h3 id="ability"></h3>
+                    <p>Ability</p>
+                </div>
+                <div class="card-footer-text">
+                    <h3 id="exp"></h3>
+                    <p>XP</p>
+                </div>
+                <div class="card-footer-text">
+                    <h3 id="height"></h3>
+                    <p>Height</p>
+                </div>  
+            </div>
+        </article>
+    </template>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
