@@ -11,37 +11,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
     <!--My Css-->
     <link rel="stylesheet" href="css/styles.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
     <title>Pokemón</title>
 </head>
 <body>
     <main id="main" class="flex">
-        
+
     </main>
     <template id="template-card">
-        <article class="card">
-            <img src="./images/bg-pattern-card.svg" alt="Imagen Header Card" class="card-header">
-            <div class="card-body">
-                <img id="image" class="card-body-img" src="" alt="Imagen Pokemon">
-                <h1 id="body-title" class="card-body-title"></h1>
-                <p id="type" class="card-body-text"></p>
+        <div class="flecha-izq">
+            <i class="fas fa-arrow-circle-left fa-8x"></i>
+        </div>
+        <div>
+            <div>
+            <input class="input" type="text" placeholder="Enter the Pokemon you are looking for">
+            <button class="btn-poke">Search</button>
             </div>
-            <div class="card-footer">
-                <div class="card-footer-text">
-                    <h3 id="ability"></h3>
-                    <p>Ability</p>
+            <article class="card">
+                <img src="./images/bg-pattern-card.svg" alt="Imagen Header Card" class="card-header">
+                <div class="card-body">
+                    <img id="image" class="card-body-img" src="" alt="Imagen Pokemon">
+                    <h1 id="body-title" class="card-body-title"></h1>
+                    <p id="type" class="card-body-text"></p>
                 </div>
-                <div class="card-footer-text">
-                    <h3 id="exp"></h3>
-                    <p>XP</p>
+                <div class="card-footer">
+                    <div class="card-footer-text">
+                        <h3 id="ability"></h3>
+                        <p>Ability</p>
+                    </div>
+                    <div class="card-footer-text">
+                        <h3 id="exp"></h3>
+                        <p>XP</p>
+                    </div>
+                    <div class="card-footer-text">
+                        <h3 id="height"></h3>
+                        <p>Height</p>
+                    </div>  
                 </div>
-                <div class="card-footer-text">
-                    <h3 id="height"></h3>
-                    <p>Height</p>
-                </div>  
-            </div>
-        </article>
+            </article>
+        </div>
+        
+        <div class="flecha-der">
+            <i class="fas fa-arrow-circle-right fa-8x"></i>
+        </div>
     </template>
-
+    <!-- My Js -->
     <script src="./js/main.js"></script>
 </body>
 </html>

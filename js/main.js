@@ -7,7 +7,6 @@ const capitalize = text => {
     return txt.charAt(0).toUpperCase() + txt.slice(1)
 }
 
-
 const fetchData = () =>{
     fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
         .then((res) => res.json())
@@ -22,7 +21,6 @@ const fetchData = () =>{
                 height: dataPokemon.height,
                 weight: dataPokemon.weight
             }
-
             mostrarPokemon(pokemon)
         })   
 }
