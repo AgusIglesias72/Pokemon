@@ -47,7 +47,9 @@ h1 {
       border: 5px solid white;
       border-radius: 100%;
       margin-top: -53px;
-      background-color: white; }
+      background-color: white;
+      max-width: 20rem;
+      height: 25rem; }
     .card-body-title {
       margin-top: 2rem;
       font-size: 2rem; }
