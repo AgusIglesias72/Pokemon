@@ -1,6 +1,8 @@
-console.log("hola")
 
-let id = 1
+let id = 2
+
+const flechaizq = document.getElementById('flecha-izq')
+const flechader = document.getElementById('flecha-der')
 
 const capitalize = text => {
     const txt = text.toLowerCase()
@@ -26,10 +28,12 @@ const fetchData = () =>{
 }
 
 const mostrarPokemon = (id) => {
-    const main = document.getElementById('main')
     const template = document.getElementById('template-card').content
     const clone = template.cloneNode(true)
     const fragment = document.createDocumentFragment()
+    const poke = document.getElementById('pokemon')
+
+    poke.innerHTML = ""
 
     clone.getElementById('image').setAttribute("src", id.img)
 
@@ -45,7 +49,20 @@ const mostrarPokemon = (id) => {
 
     fragment.appendChild(clone)
 
-    main.appendChild(fragment)
+    poke.appendChild(fragment)
 }
 
-fetchData()
+
+document.addEventListener('DOMContentLoaded', () =>{
+    fetchData()
+})
+
+flechaizq.addEventListener('click', () =>{
+    id -= 1
+    
+    fetchData()
+})
+flechader.addEventListener('click', () =>{
+    id += 1
+    fetchData()
+})
