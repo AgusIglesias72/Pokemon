@@ -67,26 +67,10 @@ h1 {
       .card-footer-text p {
         letter-spacing: 1px; }
 
-.flecha-izq {
-  padding-right: 30px;
-  margin-bottom: 50px;
-  color: rgba(255, 255, 255, 0.507);
-  cursor: pointer; }
-  .flecha-izq:hover {
-    color: rgba(255, 255, 255, 0.808); }
-
-.flecha-der {
-  padding-left: 30px;
-  margin-bottom: 50px;
-  color: rgba(255, 255, 255, 0.507);
-  cursor: pointer; }
-  .flecha-der:hover {
-    color: rgba(255, 255, 255, 0.808); }
-
 .input {
   width: 100%;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 15px;
   opacity: 0.7;
   border-radius: 10px;
   border: none;
@@ -101,3 +85,18 @@ h1 {
   background-color: #149fdfbb;
   border-radius: 6px;
   cursor: pointer; }
+
+.flechas {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px; }
+  .flechas .flecha-izq {
+    color: rgba(255, 255, 255, 0.507);
+    cursor: pointer; }
+    .flechas .flecha-izq:hover {
+      color: rgba(255, 255, 255, 0.808); }
+  .flechas .flecha-der {
+    color: rgba(255, 255, 255, 0.507);
+    cursor: pointer; }
+    .flechas .flecha-der:hover {
+      color: rgba(255, 255, 255, 0.808); }

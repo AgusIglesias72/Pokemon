@@ -21,13 +21,18 @@
 
     </main>
     <template id="template-card">
-        <div class="flecha-izq">
-            <i class="fas fa-arrow-circle-left fa-8x"></i>
-        </div>
         <div>
             <div>
-            <input class="input" type="text" placeholder="Enter the Pokemon you are looking for">
-            <button class="btn-poke">Search</button>
+                <input class="input" type="text" placeholder="Enter the Pokemon you are looking for">
+                <button class="btn-poke">Search</button>
+                <div class="flechas">
+                    <div class="flecha-izq">
+                        <i class="fas fa-arrow-circle-left fa-6x"></i>
+                    </div>
+                    <div class="flecha-der">
+                        <i class="fas fa-arrow-circle-right fa-6x"></i>
+                    </div>
+                </div>
             </div>
             <article class="card">
                 <img src="./images/bg-pattern-card.svg" alt="Imagen Header Card" class="card-header">
@@ -51,10 +56,6 @@
                     </div>  
                 </div>
             </article>
-        </div>
-        
-        <div class="flecha-der">
-            <i class="fas fa-arrow-circle-right fa-8x"></i>
         </div>
     </template>
     <!-- My Js -->
