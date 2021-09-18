@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="css/styles.css">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-   
+    <!--AnimateStyle-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Pokemón</title>
 </head>
 <body>
     <main class="flex">
         <div id="main">
             <div>
-                <input class="input" type="text" placeholder="Enter the Pokemon you are looking for">
-                <button class="btn-poke">Search</button>
+                <input id="input" class="input" type="text" placeholder="Enter the Pokemon you are looking for">
+                <button id="button" class="btn-poke">Search</button>
                 <div class="flechas">
                     <div id="flecha-izq" class="flecha-izq">
                         <i class="fas fa-arrow-circle-left fa-6x"></i>
@@ -62,5 +63,7 @@
     </template>
     <!-- My Js -->
     <script src="./js/main.js"></script>
+    <!--SweetAlert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
